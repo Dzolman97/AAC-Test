@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+    <title>{% block title %}Auto Repair: American Auto Clinic{% endblock %}</title>
+  </head>
+  <body>
+   <div class="container d-flex" style="padding: 0px; padding-top: 20px; margin-bottom: 0px; background-color: white;">
+      <div class="mr-auto p-2">
+         <a href="/">
+            <img src="../static/logo3.png" alt="American Auto Clinic Logo with an american flag waving" width="400" height="225" class="mb-0">
+         </a>
+      </div>
+      <div class="p-2 d-none d-lg-block">
+         <img src="../static/Call.png" alt="Call Us Today at 760-746-6150. Adress is: 1630 South Escondido Blvd Escondido, CA 92025" width="400" height="225" class="mb-0">
+      </div>
+   </div>
+   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #05053e;">
+      <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbar"
+      >
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbar">
+         <div class="navbar-nav">
+            <a class="nav-item nav-link" id="home"  href="/">Home</a>
+            <a class="nav-item nav-link" id="aboutUs" href="/about-us">About Us</a>
+            <a class="nav-item nav-link" id="specialOffers" href="/special-offers">Special Offers</a>
+            <a class="nav-item nav-link" id="gallery" href="/gallery">Gallery</a>
+            <a class="nav-item nav-link" id="testimonials" href="/testimonials">Testimonials</a>
+            <a class="nav-item nav-link" id="location" href="/location">Location</a>
+            <a class="nav-item nav-link" id="contact" href="/contact-us">Contact Us</a>
+         </div>
+      </div>
+   </nav>
+
+   <div class="container">
+      {% block content %}
+      {% endblock %}
+   </div>
+
+   <div class="container mt-5 bg-light" style="height: 100px;">
+      <p style="color: #05053e67;">@2022 American Auto Clinic</p>
+   </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
